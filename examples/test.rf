@@ -1,0 +1,27 @@
+let x = 0;
+
+enum Error {
+    OhNo,
+    Cool,
+}
+
+fn main() !Error {
+    println!("hello world");
+    let x = 3 + (5 / (2 - 3 / 2));
+    let y = match x {
+        5 =>
+    return Error::OhNo;
+}
+
+/// Doc comments here!
+fn add_maybe(x i32, y i32) i32!Error? { // i32!Error? means Option<Result<i32, Error>>
+    if x, y === 0 { // Both equal 0 (triple equals)
+        return !Error::Cool;
+    }
+
+    if x, y != 0 { // At least one != 0
+        return x + y;
+    }
+
+    // Returning () for Option is implied
+}
